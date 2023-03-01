@@ -6,7 +6,6 @@ function CreateTodoButton() {
         alert(msg);
     }
 
-
     return (
         <button 
             className="CreateTodoButton"
