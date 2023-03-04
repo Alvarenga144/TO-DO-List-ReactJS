@@ -1,4 +1,4 @@
-import React from './CreateTodoButton';
+import React from '.';
 import './CreateTodoButton.css';
 
 function CreateTodoButton() {
