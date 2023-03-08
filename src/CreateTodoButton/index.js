@@ -1,15 +1,17 @@
-import React from '.';
+import React from 'react';
 import './CreateTodoButton.css';
 
-function CreateTodoButton() {
-    const onClickButton = (msg) => {
-        alert(msg);
+function CreateTodoButton(props) {
+
+    const onClickButton = () => {
+        // Toggle para agregar task
+        props.setOpenModal(!props.openModal);
     }
 
     return (
-        <button 
+        <button
             className="CreateTodoButton"
-            onClick={() => onClickButton('Modal desplegado...')}
+            onClick={onClickButton}
         >
             +
         </button>
